@@ -8,7 +8,6 @@ function getModule(url) {
     const moduleName = url.replace('/@modules/', '')
     const prefix = path.join(__dirname, './node_modules', moduleName)
     console.log("🚀 ~ file: my-vite.js:10 ~ getModule ~ prefix", prefix)
-    console.log('prefix', prefix);
     const module = require(prefix + "/package.json").module
     const filePath = path.join(prefix, module)
     const ret = fs.readFileSync(filePath, 'utf-8')
