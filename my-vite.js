@@ -62,7 +62,7 @@ app.use(async (ctx) => {
     } else if (query.type === 'template') {
       const tpl = vueSFCAst.descriptor.template.content
       console.log("*************** ~ app.use ~ tpl", tpl)
-      const renderFn = compilerDOM.compile(tpl, { module: "module" }).code
+      const renderFn = compilerDOM.compile(tpl, { mode: "module" }).code
       console.log("***************  app.use  renderFn", renderFn)
       ctx.type = 'application/javascript'
       ctx.body = rewriteImport(renderFn)
