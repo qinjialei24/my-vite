@@ -4,7 +4,8 @@
   "description": "",
   "main": "my-vite.js",
   "scripts": {
-    "run":"nodemon my-vite.js"
+    "run": "nodemon my-vite.js",
+    "vite": "nodemon ./src/vite/index.js"
   },
   "author": "",
   "license": "ISC",
