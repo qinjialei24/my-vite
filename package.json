@@ -16,6 +16,7 @@
     "vue": "^3.2.45"
   },
   "devDependencies": {
-    "esbuild": "^0.17.5"
+    "esbuild": "^0.17.5",
+    "sirv": "^2.0.2"
   }
 }
