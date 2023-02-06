@@ -5,12 +5,17 @@
   "main": "my-vite.js",
   "scripts": {
     "run": "nodemon my-vite.js",
-    "vite": "nodemon ./src/vite/index.js"
+    "vite": "esno ./src/vite/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "connect": "^3.7.0",
+    "http": "^0.0.1-security",
     "koa": "^2.14.1",
     "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "esbuild": "^0.17.5"
   }
 }
